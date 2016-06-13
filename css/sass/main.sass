@@ -1,0 +1,639 @@
+@import "bourbon/bourbon"
+@import "vars.sass"
+
+
+
+
+//Load Libs SASS
+@import "sunbury-theme/libs/animate.css/animate"
+//@import "app/libs/superfish/dist/css/superfish" // импортировать в sass css файлы нужно без разширения
+@import "sunbury-theme/libs/font-awesome/scss/font-awesome"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+#content
+	max-width: 1280px
+	margin: 70px auto
+	position: relative
+	.secondary-toggle
+		display: none
+
+
+#primary
+	width: 75.8%
+	float: left
+	padding: 0 120px 0 35px
+#secondary
+	width: 24.2%
+	padding: 0 45px 0 10px
+	float: left
+	height: 100%
+	.widget
+		margin-bottom: 40px
+	.fw-heading
+		margin-bottom: 10px
+	.posts .fw-row
+		border: 1px solid #becedc
+		padding: 10px 15px
+		margin-bottom: 30px
+		img
+			float: left
+			padding-right: 10px
+		h4
+			font-size: 14px
+
+			clear: right
+			font-weight: normal
+
+		p
+			font-size: 11.2px
+		a
+			display: block
+			background-color: $main-color
+			text-transform: uppercase
+			text-align: center
+			padding: 10px 0
+			font-size: 11.2px
+			color: #fff
+			font-weight: bold
+			margin-top: 10px
+			text-decoration: none	
+			transition: all .5s ease
+			&:hover
+				background: darken($main-color, 20%)
+.widget_product_categories
+	.widget-title
+		color: $main-color
+		font-size: 1em
+		font-weight: bold
+		padding:
+			left: 35px
+			bottom: 10px
+		text-transform: uppercase
+.product-categories
+	li
+		border: 1px solid $border-color
+		border-collapse: collapse
+		background-color: #fff
+		margin: 0
+		a
+			color: $main-color
+			display: block
+			line-height: 40px
+			padding-left: 30px
+			font-size: 14px
+			border-radius: 0
+			position: relative
+			span::after
+				position: absolute
+				right: 15px
+				z-index: 10
+				text-align: center
+				width: 25%
+				color: $main-color
+			span
+				position: absolute
+				right: 0
+				z-index: 5
+				text-align: center
+				width: 15%
+				height: 40px
+				&:hover
+
+					border-left: 1px solid #fff
+					&::after
+						color: #fff
+			&:hover
+				background-color: $main-color
+			span
+				float: right
+				padding-right: 8px
+		li
+			background-color: #f1f2f2
+			a
+				padding-left: 42px
+		&:active
+			background-color: $main-color
+			a
+				color: #fff
+	ul
+		margin: 0
+		padding: 0
+		display: none
+.woocommerce #content #main .product
+	a:hover
+		color: darken($main-color, 25%) !important
+
+	.woocommerce-breadcrumb
+		padding-left: 25px
+		float: right
+		width: 55%
+		font-size: 14px
+		white-space: nowrap
+		a
+			color: $text-color
+			font-size: 14px
+		&::before, &::after
+			clear: none
+	.images
+		float: left
+		width: 45%
+		padding-right: 30px
+		img
+			display: inline-block
+			width: auto
+	.product-title-wrap
+		.product_title
+			font-size: 28px
+			font-weight: bold
+			color: #21272e
+		.price
+			font-size: 36.4px
+			font-weight: bold
+			font-family: "Roboto", sans-serif
+			color: $text-color
+	.summary
+		float: right
+		width: 55%
+		padding-left: 25px
+		margin-bottom: 20px
+		.variations_form
+			margin: 0
+
+		p
+			margin-bottom: 15px
+		em
+			font-size: 11.2px
+
+			.red
+				color: #e75958
+		.variations
+			width: auto
+			.label
+				padding-right: 60px
+				font-weight: normal
+
+			tr
+	
+				td
+					vertical-align: middle
+					line-height: 1.5
+					padding: 10px 0
+					position: relative
+					p
+						margin: 0
+					select, input
+						border-radius: 0
+						border: 1px solid #c1d1de
+						padding-left: 10px
+					select
+						width: 240px
+						margin: 0
+						background-color: #fff
+						-webkit-appearance: none
+						-moz-appearance: none
+						color: rgba(0,0,0,0)
+						text-shadow: 0 0 0 $text-color
+						option
+							padding: 10px 10px 10px 10px
+
+					input
+						text-align: center
+						width: 50px
+						padding: 10px
+
+						-moz-appearance: textfield
+						&::-webkit-inner-spin-button
+							display: none
+					&.select::after
+						content: ''
+						display: inline-block
+						pointer-events: none
+						background-image: url("../img/icons.png")
+						width: 25px
+						height: 20px
+						position: absolute
+						right: 5px
+						text-decoration: none
+						top: 20px
+						background-position: -110px 0
+		.single_variation_wrap .button
+					background-color: $main-color
+					text-transform: uppercase
+					border: none
+					color: #fff
+					padding: 10px 40px
+					text-align: center
+					font-weight: bold
+					margin-left: 120px
+					transition: all .5s ease
+					border-radius: 0
+					font-size: 14px
+					line-height: 1.5
+					&:hover
+						background: darken($main-color, 20%)
+	.wc-tabs-wrapper
+		&::after, &::before
+			display: block
+			content: ''
+			clear: both
+		.wc-tabs
+			float: left
+			&::before
+				border: none
+			li
+				margin-bottom: 25px
+				position: relative
+				display: block
+				background: transparent
+				border: none
+				padding: 0
+				a
+					color: $main-color
+					font-weight: bold
+					padding: 0 0 0 25px
+
+				&.active::before
+					content: ''
+					background-image: url("../img/icons.png")
+					display: block
+					width: 20px
+					height: 20px
+					box-shadow: none
+					left: auto
+					border: none
+					bottom: 8px
+					bottom: auto
+					position: absolute
+					transform: rotate(-90deg)
+					background-position: 123px -7px
+				&::after, &::before
+					box-shadow: none
+					border: none
+					position: relative
+					right: auto
+		#tab-reviews
+			margin-left: 40px
+		.wc-tab
+			float: left
+			margin-left: 145px
+			margin-bottom: 32px
+			.form-submit
+				input
+					color: #fff
+					background-color: $main-color
+					border-radius: 0
+			h4
+				margin-bottom: 20px
+				font-weight: medium
+				span
+					display: block
+					font-weight: normal
+			ul
+				padding-left: 15px
+				margin-bottom: 20px	
+				li
+					list-style-type: disc
+			a
+				text-decoration: underline
+				color: $main-color
+				font-weight: bold
+#primary	.related
+
+	&-title
+		color: $text-color
+		margin-bottom: 20px
+	.products
+		margin: 0 -10px
+		.next-button
+			display: none
+			background-color: #fff
+			padding: 10px 0
+			border: none
+			font-weight: bold
+			border: 1px solid $main-color
+			width: 100%
+			color: $main-color
+			text-transform: uppercase
+			text-align: center
+			position: relative
+			font-size: 12px
+			transition: all .5s ease
+			&:hover
+				color: darken($main-color, 20%)
+			&::before
+				content: ''
+				display: block
+				background-image: url("../img/icons.png")
+				width: 20px
+				height: 20px
+				right: 20%
+				position: absolute
+				background-position: 125px -50px
+		.product
+			float: left
+			margin: 0
+			padding: 0 10px
+			position: relative
+			width: 20%
+			a
+				text-decoration: none
+			img
+				box-shadow: none
+				display: block
+				height: auto
+				margin: 0 0 10px
+				width: 100%
+			h3
+				font-size: 14px
+				color: #4f4d4d
+			.price
+			
+				color: $text-color
+
+		.product:last-child
+			margin-right: 0
+
+	.add_to_cart_button
+		background-color: $main-color
+		border: 0
+		text-align: center
+		font-size: 10.25px
+		color: #fff
+		transition: all .3s ease
+		display: block
+		font-weight: 700
+		text-decoration: none
+		margin-top: 8px
+		padding: 8px 0
+		text-transform: uppercase
+		position: relative
+		border-radius: 0
+			
+		
+	
+
+
+	
+
+
+
+
+
+
+
+
+
+.site-footer
+	background-color: #3e434a
+	position: relative
+	color: #989898
+
+	h3
+		color: #c2c4c6
+		font-size: 14px
+		text-transform: uppercase
+		white-space: nowrap
+	#supplementary
+		max-width: 1280px
+		margin: 0 auto
+		position: relative
+		.widget
+			margin: 0
+		.slider-wrap
+			cursor: default !important
+			width: 100%
+			overflow-x: hidden
+			height: 100%
+			position: relative
+
+			.owl-nav
+				position: absolute
+				width: 100%
+				z-index: 2
+				color: #fff
+				font-size: 36px
+				top: 45%
+				div
+					cursor: pointer
+					position: absolute
+					background-position: -100px 0
+					width: 15px
+					height: 25px
+					background-image: url("../img/icons.png")
+					&.owl-prev
+						transform: rotate(-180deg)	
+					&.owl-next
+						right: 0
+
+
+						
+			.slide
+				float: left
+			.footer-sidebar
+				position: relative
+
+		.owl-dots
+			position: absolute
+			bottom: 25px
+			width: 100%
+			text-align: center
+		.owl-dot
+			display: inline-block
+			margin: 0 3px
+			width: 14px
+			height: 14px
+			background: rgba(0, 0, 0, .25)
+			border-radius: 10em
+			cursor: pointer
+			transition: background-color .25s ease
+			&.active
+				background-color: #fff
+		.footer-sidebar
+			
+			.fw-col-sm-15
+				width: 20%
+				float: left
+				padding: 0 15px
+
+
+	section
+		a
+			color: #989898
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+		.fw-btn-1
+			border-bottom: 1px solid #989898
+			padding: 4px 0
+			margin-bottom: 10px
+			background: none
+			text-align: left
+			font-family: "Roboto",sans-serif
+			color: #c2c4c6
+			font-size: 14px
+			text-transform: uppercase
+			white-space: nowrap
+			display: block
+			cursor: default
+			pointer-events: none
+			font-weight: bold
+			&:hover
+				text-decoration: none
+		strong
+			white-space: nowrap
+			float: right
+
+		.icons
+			margin: 15px -10px
+			li
+				float: left
+				margin-left: 10px
+
+				a
+					width: 35px
+					height: 35px
+					vertical-align: middle
+					padding: 10px
+					line-height: 1
+					display: block
+					text-align: center
+					border-radius: 50%
+					border: 1px solid #989898
+					i
+						color: #fff
+					font-size: 14px
+					&:hover
+						background: darken(#989898, 30%)
+		.fw-ul
+			display: inline-block
+			width: 100%
+			padding: 30px 35px 70px
+
+			li
+				margin-bottom: 5px
+		.form-wrapper
+			margin-bottom: 50px
+			input[type="submit"]
+				background-color: #989898
+				font-size: 11.2px
+				font-weight: bold
+				float: right
+				padding: 8px 15px
+				color: #fff
+				border: none
+				text-transform: uppercase
+				border-radius: 0
+				font-family: "Roboto", sans-serif
+				box-shadow: none
+				text-shadow: none
+				&:hover
+						background: darken(#989898, 15%)
+			.field-text
+				margin: 5px 0 10px
+				display: block
+				clear: both
+				position: relative
+				sup
+					font-size: 0.01px
+				input
+					
+					width: 100%
+					background-color: transparent
+					border: 1px solid #6a6e73
+					font-size: 12.6px
+					padding: 10px 12px
+					color: #fff
+					border-radius: 0
+					font-family: "Roboto", sans-serif
+					text-shadow: none
+					
+		.button
+			background-color: #989898
+			font-size: 11.2px
+			font-weight: bold
+			display: block
+			width: 100%
+			padding: 8px 15px
+			color: #fff
+			border: none
+			text-align: center
+			text-transform: uppercase
+			margin-top: 10px
+			border-radius: 0
+			text-shadow: none
+			line-height: 1.5
+			box-shadow: none
+			&:hover
+				background: darken(#989898, 15%)
+				text-decoration: none
+	.bottom-line
+		background-color: #363D43
+		border-top: #44494F solid 2px
+		padding: 15px 50px
+		.line-wrap
+			max-width: 1280px
+			margin: 0 auto
+			position: relative
+			.site-info
+				display: block
+				& > *
+					display: inline-block
+				.logo
+					
+					text-decoration: none
+					padding: 0 15px 5px 0
+					img
+						position: relative
+						top: 10px
+					h3
+						
+						font-weight: bold
+						font-size: 12px
+
+						font-family: "Times New Roman"
+						text-transform: uppercase
+				.copyright
+					border-left: 1px solid #7B8086
+					
+					padding: 5px 15px
+					width: 235px
+			.line-item
+				position: absolute
+				right: 0
+				bottom: -15px
+				
+				
+				
+				
+				width: 280px
+				a
+					color: #fff
+					text-decoration: none
+					padding: 7px
+					font-weight: bold
+					background-color: $main-color
+					display: block
+					font-size: 12px
+					position: relative
+					transition: all .5s ease
+					&:hover
+						background-color: darken($main-color, 25%)
+					&::after
+						content: ''
+						display: block
+						background-image: url("../img/icons.png")
+						width: 15px
+						height: 20px
+						position: absolute
+						right: 20px
+						background-position: -100px 0
+						transform: rotate(-90deg)
+						top: 8px
+
+
+//ALWAYS END
+@import "media"

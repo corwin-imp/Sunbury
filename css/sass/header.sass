@@ -1,0 +1,252 @@
+@import "bourbon"
+@import "vars.sass"
+
+
+
+
+html
+	font-size: 14px
+body
+	font-size: 14px
+	min-width: 320px
+	line-height: 1.5
+	font-family: "Roboto", sans-serif
+	overflow-x: hidden
+	background-color: #fff
+	margin: 0
+	&::before
+		background-color: #f7f8f9
+
+		border-right: 2px solid $border-color
+		content: ""
+		display: block
+		height: 100%
+		left: 0
+		min-height: 100%
+		position: fixed
+		top: 0
+		width: 29.4118%
+		z-index: 0
+		width: calc(50% - 335px)
+* ::before, ::after
+	box-sizing: border-box
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	vertical-align: baseline
+
+.text-right
+	text-align: right
+.text-left
+	text-align: left
+.text-center
+	text-align: center
+.hidden
+	display: none
+
+#content
+	&::before, &::after
+		clear: both
+		content: ''
+		display: table
+
+a
+	outline: none!important
+	font-family: "Roboto", sans-serif
+	&:hover
+		text-decoration: none
+strong, b
+	font-family: "Roboto", sans-serif
+	font-weight: bold
+h1, h2, h3, h4, h5, h6, a
+	font-family: "Roboto", sans-serif
+
+ul, li
+	list-style-type: none
+	padding: 0
+	margin: 0
+
+
+
+
+
+
+
+
+
+.site-header
+	background-color: $main-color
+	color: #fff
+	
+	position: relative
+	a
+		color: #fff
+		text-transform: uppercase
+		font-size: 11px
+		font-weight: bold
+	.header-main
+		max-width: 1280px
+		margin: 0 auto
+		position: relative
+		height: 100%
+		.logo
+			float: left
+			position: relative
+			top: 5px
+			padding-left: 2.7%
+			padding-right: 2%
+			h3
+				font-weight: bold
+				font-size: 12px
+				font-family: "Times New Roman"
+				text-transform: uppercase
+				margin: 0
+				line-height: 2px
+
+		.toggle_mnu, .search-box-wrapper
+			display: none
+		.search-box-wrapper
+			position: absolute
+			
+			right: 0
+			bottom: -50%
+
+			&.active
+				display: block
+
+				
+			input
+				color: #fff
+				height: 100%
+				border: none
+				padding: 5px
+				background-color: darken($main-color, 5%)
+				&.search-submit
+					margin-left: -4px
+					margin-right: -4px
+					padding: 5px 20px
+					color: #363d43
+					border-top-right-radius: 3px
+					border-bottom-right-radius: 3px
+					font-weight: bold
+					text-transform: uppercase
+					background: linear-gradient(to right, #2765e5, #fff )
+					transition: all .1s ease
+					&:hover
+						background: $main-color
+			.search-form
+				
+				border-radius: 3px
+				padding: 0 0 0 15px
+				.screen-reader-text
+					color: #363d43
+					background: linear-gradient(to right, $main-color, #2765e5 )
+					padding: 7px
+					font-size: 14px
+					margin-right: -3px
+
+
+		.header-items
+			float: right
+
+
+			li
+				display: inline-block
+				padding: 15px 10px
+				vertical-align: middle
+				.screen-reader-text
+					border-color: #1445ac
+					z-index: 10
+					position: relative
+				a
+					font-size: 0
+					
+					padding: 12px
+					background-position: 0 0
+					border: none
+					background-image: url("../img/icons.png")
+					transition: all .4s ease
+					border-color: #1445ac
+
+					&:hover
+						background-color: darken($main-color, 10%)
+						border: 1px solid #1445ac
+				&.search-toggle
+					a
+						background-position: -24px 0
+				&.account
+					a
+						background-position: -47px 0
+				&.order
+					a
+						background-position: -72px 0
+				&.cart
+					a
+						background-position: -2px 0
+
+
+		.main-navigation
+			float: left
+			clear: none
+			width: auto
+			li
+				background-color: $main-color
+				.sub-menu
+					width: auto
+					top: 57px
+
+		.flexnav
+			text-align: center
+			max-height: 100%
+			opacity: 1
+			& > li
+				display: inline-block
+				width: auto
+				padding: 15px 0
+		li
+			&:first-child
+				a
+					border: none
+			a
+				padding: 5px 15px
+				background: $main-color
+				border: none
+				color: #fff
+				border-left: 1px solid darken($main-color, 20%)
+
+				&:hover
+					color: darken($main-color, 30%)
+			
+			.touch-button
+				height: 15px
+				top: 40px
+				right: 0
+				left: 0
+				width: 70%
+
+				margin: 0 auto
+				background-color: transparent
+				i
+					top: -7px
+					font-size: 8px
+					font-style: normal
+					font-weight: bold
+					color: #fff
+				&.active
+					i
+						color: darken($main-color, 15%)
+			li
+				a
+					background-color: darken($main-color, 5%)
+					border-top: 1px solid darken($main-color, 25%)
+
+
+@import sandwich
+.toggle_mnu
+	left: -5px
+	top: -5px
+	position: absolute
+	background-color: transparent
+	.touch-button
+		display: none

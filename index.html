@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<title>sunbury</title>
+	<!-- Bootstrap v3.3.4 Grid Styles -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}</style>
+	<!-- Header CSS (First Sections of Website: compress & paste after release from _header.css here) -->
+	<style></style>
+
+	<!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
+	<script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="_fonts.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
+	<!-- bower:css -->
+	<link rel="stylesheet" href="libs/slicknav/dist/slicknav.css" />
+	<link rel="stylesheet" href="libs/flexnav/dist/css/flexnav.css" />
+	<link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.css" />
+	<!--endbower-->
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<link rel="stylesheet" href="libs/navgoco/dist/css/jquery.navgoco.css">
+
+
+
+
+</head>
+<body class="single single-product postid-33 logged-in admin-bar woocommerce woocommerce-page customize-support">
+	<div class="hfeed site" id="page">
+
+
+
+		<div class="hidden">
+			<form class="popup-form callback zoom-anim-dialog" id="callback">
+				<div class="success">Thank!</div>
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="company-shop">
+				<input type="hidden" name="admin_email" value="korvin424@gmail.com">
+				<input type="hidden" name="form_subject" value="request service">
+				<!-- END Hidden Required Fields -->
+
+				<h3>order service name</h3>
+				<label >
+					<span>Your name:</span>
+					<input type="text" name="name" placeholder=" please enter your name...">
+				</label>
+				<label >
+					<span>Your phone:</span>
+					<input type="text" name="phone" placeholder=" please enter your phone..." required>
+				</label>
+				<div class="text-center">
+					<button class="button">Order</button>
+				</div>
+				where
+				<input type="hidden" class="formname" name="service" value="service name">
+			</form>
+		</div>
+
+		<header id="masthead" class="site-header">
+
+			<div class="header-main clearfix">
+				<a class="logo">
+					<img src="img/log.png" alt="">
+					<h3 class="site-title" rel="home">Sunbury Cedar</h3>
+
+				</a>
+
+				<nav id="site-navigation" class="main-navigation primary-navigation" role="navigation">
+					<button class="toggle_mnu">
+					<span class="sandwich">
+						<span class="sw-topper"></span>
+						<span class="sw-bottom"></span>
+						<span class="sw-footer"></span>
+					</span>
+				</button>
+					<div class="menu-navigation-container">
+						<ul id="primary-menu" class="nav-menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">link-1</a>
+								<ul class="sub-menu">
+									<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">sub-link-1</a></li>
+								</ul>
+							</li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">link-2</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">link-3</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">link-4</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">link-5</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">link-6</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">link-7</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">link-8</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">link-9</a>
+								<ul class="sub-menu">
+									<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">sub-link-2</a></li>
+								</ul>
+							</li>
+
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">link-10</a>
+								<ul class="sub-menu">
+									<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">sub-link-3</a></li>
+								</ul>
+							</li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">link-11</a></li>
+						</ul>
+					</div>
+				</nav>
+
+<div class="header-items">
+
+
+			<ul>
+				
+	<li class="search-toggle">
+				<a  aria-controls="search-container" aria-expanded="false" class="screen-reader-text" href="#search-container">Search</a>
+			</li>
+				
+			<li class="account menu-item menu-item-type-post_type menu-item-object-page menu-item-224" id="menu-item-224"><a href="http://localhost/shop/?page_id=23">Мой аккаунт</a></li>
+<li class="order menu-item menu-item-type-post_type menu-item-object-page menu-item-225" id="menu-item-225"><a href="http://localhost/shop/?page_id=22">Оформление заказа</a></li>
+<li class="cart menu-item menu-item-type-post_type menu-item-object-page menu-item-226" id="menu-item-226"><a href="http://localhost/shop/?page_id=21">Корзина</a></li>
+			</ul>
+		</div>
+		<div class="search-box-wrapper" id="search-container">
+			<div class="search-box">
+				<form action="http://localhost/shop/" class="search-form" method="get" role="search">
+				<label>
+					<span class="screen-reader-text">Найти:</span>
+					<input type="search" name="s" value="" placeholder="Поиск…" class="search-field">
+				</label>
+				<input type="submit" value="Поиск" class="search-submit">
+			</form>			</div>
+		</div>
+		</div><!-- header-main -->
+	</header>
+
+
+	<div id="content" class="site-content">
+		<!-- index.php -->
+		<a class="secondary-toggle" href="#">Category: Decking Kits <span></span></a>
+		<a class="sort" href="#"></a>
+		<!-- get_sidebur -->
+		<aside id="secondary">
+			<!-- get_bloginfo -->
+			<h2 class="site-description"></h2>
+			<!-- <?php endif; ?> -->
+
+			<!-- <?php if ( has_nav_menu( 'secondary' ) ) : ?> -->
+			<!-- 	<nav role="navigation" class="navigation site-navigation secondary-navigation"> -->
+			<!-- 		<?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?> -->
+			<!-- 	</nav> -->
+			<!-- 	<?php endif; ?> -->
+
+			<!-- <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?> -->
+
+			<!-- 		<?php dynamic_sidebar( 'sidebar-1' ); ?> -->
+			<section id="woocommerce_product_categories-3" class="widget woocommerce widget_product_categories">
+				<h1 class="widget-title">Shop by Category</h1>
+
+				<ul class="accor-nav product-categories">
+
+
+
+					<li class="cat-item-9 cat-parent current-cat-parent">
+
+
+						<a href="#">Decking Materials &amp; Kits</a>  
+						<ul class='children'>
+							<li class=" cat-item-8 current-cat">
+								<a href="http://localhost/shop/?product_cat=decking">Decking Kits</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="cat-item-12 cat-parent">
+						<a href="#">Fencing Material &amp; Panels</a>
+						<ul class='children'>
+							<li class="cat-item-21">
+								<a href="http://localhost/shop/?product_cat=panels">Panels</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="cat-item-13 cat-parent"><a href="#">Sheds, Gazebos &amp; Pagodas</a>
+						<ul class='children'>
+							<li class="cat-item-18"><a href="http://localhost/shop/?product_cat=sheds">Sheds</a></li>
+						</ul>
+					</li>
+					<li class="cat-item-14 cat-parent"><a href="#">Landscape &amp; Garden</a><ul class='children'>
+						<li class="cat-item-19"><a href="http://localhost/shop/?product_cat=garden">Garden</a></li>
+					</ul>
+				</li>
+				<li class="cat-item-15 cat-parent">
+					<a href="#">Play Structures</a>
+					<ul class='children'>
+						<li class="cat-item-20"><a href="http://localhost/shop/?product_cat=tennis">tennis area</a></li>
+					</ul>
+				</li>
+				<li class="cat-item-16"><a target="scriptbreaker" href="http://localhost/shop/?product_cat=bm">Building Materials</a></li>
+				<li class="cat-item-17"><a href="http://localhost/shop/?product_cat=of">Outdoor Furniture</a></li>
+			</ul>
+
+
+
+		</section>		
+		<section class="posts widget widget_ultimate_posts" id="sticky-posts-9">
+			<ul>
+				<li class="">
+					<div class="upw-content">    
+						<p class="post-content"></p>
+						<div class="fw-page-builder-content">
+							<section class="fw-main-row ">
+								<div class="fw-container">
+									<div class="fw-row">
+										<div class="fw-col-xs-12">
+											<img alt="//localhost/shop/wp-content/uploads/2016/05/hammer.png" src="//localhost/shop/wp-content/uploads/2016/05/hammer.png"><div class="fw-heading fw-heading-h4 ">
+											<h4 class="fw-special-title">Custom Installation</h4>	</div><p>Looking for a professional? Sunbury offers experienced professionals who are keen to bring your next project to fruition. With over 35 years of experience, our trusted installers are able to service both commercials and residential clients from Lions Bay to Hope. Get the results you want.<br><a href="#">Learn more</a></p></div>
+										</div>
+
+										<div class="fw-row">
+											<div class="fw-col-xs-12">
+												<img alt="//localhost/shop/wp-content/uploads/2016/05/calc.png" src="//localhost/shop/wp-content/uploads/2016/05/calc.png"><div class="fw-heading fw-heading-h4 ">
+												<h4 class="fw-special-title">Custom Installation</h4>	</div><p>No one likes surprises, especially when it comes to the cost of your next project. Let us help you get the quote you need to help you plan better<br><a href="#">Get quote</a></p></div>
+											</div>
+
+										</div>
+									</section>
+								</div>
+								<p></p>
+
+
+
+
+							</div>
+
+						</li>
+
+
+					</ul>
+
+
+				</section>
+
+				<!-- 	<?php endif; ?> -->
+
+			</aside><!-- #secondary -->
+
+
+
+<!-- 
+<div id="secondary">
+	<?php
+		$description = get_bloginfo( 'description', 'display' );
+		if ( ! empty ( $description ) ) :
+	?>
+	<h2 class="site-description"><?php echo esc_html( $description ); ?></h2>
+	<?php endif; ?>
+
+	<?php if ( has_nav_menu( 'secondary' ) ) : ?>
+	<nav role="navigation" class="navigation site-navigation secondary-navigation">
+		<?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>
+	</nav>
+	<?php endif; ?>
+
+	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<?php dynamic_sidebar( 'sidebar-1' ); ?>
+	</div>#primary-sidebar
+	<?php endif; ?>
+</div>#secondary -->
+
+<!-- featured-content -->
+<div class="content-area woo-shop" id="primary">
+	<div role="main" class="site-main" id="main">
+
+		
+
+
+		<div class="post-33 product type-product status-publish has-post-thumbnail product_cat-decking pa_material-cedar pa_material-western shipping-taxable purchasable product-type-variable product-cat-decking has-children instock" id="product-33" itemtype="http://schema.org/Product" itemscope="">
+
+			<div class="images">
+				<a data-rel="prettyPhoto" title="" class="woocommerce-main-image zoom" itemprop="image" href="http://localhost/shop/wp-content/uploads/2016/05/Deck.jpg"><img width="337" height="337" sizes="(max-width: 337px) 100vw, 337px" srcset="http://localhost/shop/wp-content/uploads/2016/05/Deck.jpg 337w, http://localhost/shop/wp-content/uploads/2016/05/Deck-150x150.jpg 150w, http://localhost/shop/wp-content/uploads/2016/05/Deck-300x300.jpg 300w, http://localhost/shop/wp-content/uploads/2016/05/Deck-180x180.jpg 180w" title="Deck" alt="Deck" class="attachment-shop_single size-shop_single wp-post-image" src="http://localhost/shop/wp-content/uploads/2016/05/Deck.jpg"></a>
+			</div>
+			<nav itemprop="breadcrumb" class="woocommerce-breadcrumb"><a href="http://localhost/shop">Главная</a>&nbsp;/&nbsp;<a href="http://localhost/shop/?product_cat=decking-material-kits">Decking Materials &amp; Kits</a>&nbsp;/&nbsp;<a href="http://localhost/shop/?product_cat=decking">Decking Kits</a>&nbsp;/&nbsp;Deck Kit 8′ x 10′</nav>
+			<div class="summary entry-summary">
+
+			<div class="product-title-wrap">
+					<h1 class="product_title entry-title" itemprop="name">Deck Kit 8′ x 10′</h1>
+					<div itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+
+						<p class="price"><span class="amount">$855.00</span></p>
+
+						<meta content="855" itemprop="price">
+						<meta content="USD" itemprop="priceCurrency">
+						<link href="http://schema.org/InStock" itemprop="availability">
+
+					</div>
+				</div>
+				<div itemprop="description">
+					<p>Our 8×10 deck comes with everything you need to bring your backyard to life. Our wood is locally sourced from our very own mill, and includes all the materials you need to build it yourself.</p>
+					<p><em><span class="red">*</span> Please note that our deck kits include cutting stock dimensional lumber to specific lengths. All deck kits must be paid in full at the time of purchase.</em></p>
+				</div>
+
+				<form data-product_variations="[{&quot;variation_id&quot;:34,&quot;variation_is_visible&quot;:true,&quot;variation_is_active&quot;:true,&quot;is_purchasable&quot;:true,&quot;display_price&quot;:855,&quot;display_regular_price&quot;:855,&quot;attributes&quot;:{&quot;attribute_pa_material&quot;:&quot;western&quot;},&quot;image_src&quot;:&quot;&quot;,&quot;image_link&quot;:&quot;&quot;,&quot;image_title&quot;:&quot;&quot;,&quot;image_alt&quot;:&quot;&quot;,&quot;image_srcset&quot;:&quot;&quot;,&quot;image_sizes&quot;:&quot;&quot;,&quot;price_html&quot;:&quot;&quot;,&quot;availability_html&quot;:&quot;&lt;p class=\&quot;stock in-stock\&quot;&gt;In-Stock&lt;\/p&gt;&quot;,&quot;sku&quot;:&quot;50100084&quot;,&quot;weight&quot;:&quot; kg&quot;,&quot;dimensions&quot;:&quot;&quot;,&quot;min_qty&quot;:1,&quot;max_qty&quot;:&quot;&quot;,&quot;backorders_allowed&quot;:true,&quot;is_in_stock&quot;:true,&quot;is_downloadable&quot;:false,&quot;is_virtual&quot;:false,&quot;is_sold_individually&quot;:&quot;no&quot;,&quot;variation_description&quot;:&quot;&quot;}]" data-product_id="33" enctype="multipart/form-data" method="post" class="variations_form cart">
+
+					<table cellspacing="0" class="variations">
+						<tbody>
+							<tr>
+								<td class="label"><label for="pa_material">Material</label></td>
+								<td class="value select">
+									<select data-attribute_name="attribute_pa_material" name="attribute_pa_material" class="" id="pa_material"><option value="">Выбрать опцию</option><option selected="selected" value="western">Western Red Cedar</option></select>						</td>
+								</tr>
+								<tr>
+									<td class="label">
+										<label for="quantity">Quantity</label>
+									</td>
+									<td class="value">
+										<div class="quantity">
+											<input type="number" size="4" class="input-text qty text" title="Кол-во" value="1" name="quantity" max="" min="" step="1" id="quantity">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="label">
+										<label for="stock">Stock</label>
+									</td>
+									<td class="value"> 
+										<div class="woocommerce-variation single_variation" style="">
+
+
+											<p class="stock in-stock">In-Stock</p>
+
+										</div>    </td>
+
+									</tr>
+								</tbody>
+							</table>
+
+
+							<div class="single_variation_wrap">
+								<div class="woocommerce-variation-add-to-cart variations_button">
+
+									<button class="single_add_to_cart_button button alt" type="submit">+ Add to Cart</button>
+									<input type="hidden" value="33" name="add-to-cart">
+									<input type="hidden" value="33" name="product_id">
+									<input type="hidden" value="34" class="variation_id" name="variation_id">
+								</div>
+							</div>
+
+
+						</form>
+
+
+
+					</div>
+
+
+					<div class="woocommerce-tabs wc-tabs-wrapper">
+						<ul class="tabs wc-tabs">
+							<li class="description_tab active">
+								<a href="#tab-description">Описание</a>
+							</li>
+							<li class="additional_information_tab">
+								<a href="#tab-additional_information">Дополнительная информация</a>
+							</li>
+							<li class="reviews_tab">
+								<a href="#tab-reviews">Отзывы  (1)</a>
+							</li>
+						</ul>
+						<div id="tab-description" class="panel entry-content wc-tab" style="display: block;">
+
+
+							<h4>
+								Артикул <span itemprop="sku" class="sku">50100084</span>
+							</h4>
+
+							<p><strong>Specifications</strong><br>
+								Assembled Dimensions</p>
+								<ul>
+									<li>118-1/4*W x 118-1/4*D x 131*H</li>
+								</ul>
+								<p><strong>Materials</strong></p>
+								<ul>
+									<li>1*4 Red Cedar Flooring &amp; Strapping</li>
+									<li>Pressure Treated Floor Joists</li>
+									<li>Red Cedar Posts, Flaming, Rafters and Header</li>
+								</ul>
+								<p>Downloads<br>
+									<a href="http://www.brochure.com">brochure</a></p>
+								</div>
+								<div id="tab-additional_information" class="panel entry-content wc-tab" style="display: none;">
+
+
+									<h2>Дополнительная информация</h2>
+
+									<table class="shop_attributes">
+
+
+
+
+
+										<tbody><tr class="">
+											<th>Material</th>
+											<td><p>Red Cedar Posts, Western Red Cedar</p>
+											</td>
+										</tr>
+
+									</tbody></table>
+								</div>
+								<div id="tab-reviews" class="panel entry-content wc-tab" style="display: none;">
+
+									<div id="reviews">
+										<div id="comments">
+											<h2>1 отзыв на Deck Kit 8′ x 10′</h2>
+
+
+											<ol class="commentlist">
+												<li id="li-comment-6" class="comment byuser comment-author-kori bypostauthor even thread-even depth-1" itemtype="http://schema.org/Review" itemscope="" itemprop="review">
+
+													<div class="comment_container" id="comment-6">
+
+														<img width="60" height="60" class="avatar avatar-60 photo" srcset="http://2.gravatar.com/avatar/881e8e9649ec2d6a7d688c3fb88e09b9?s=120&amp;d=mm&amp;r=g 2x" src="http://2.gravatar.com/avatar/881e8e9649ec2d6a7d688c3fb88e09b9?s=60&amp;d=mm&amp;r=g" alt="">
+														<div class="comment-text">
+
+
+
+
+															<p class="meta">
+																<strong itemprop="author">kori</strong> &ndash; <time datetime="2016-05-19T12:57:13+00:00" itemprop="datePublished">19.05.2016</time>:
+															</p>
+
+
+
+															<div class="description" itemprop="description"><p>good</p>
+															</div>
+
+
+														</div>
+													</div>
+												</li><!-- #comment-## -->
+											</ol>
+
+
+										</div>
+
+
+										<div id="review_form_wrapper">
+											<div id="review_form">
+												<div class="comment-respond" id="respond">
+													<h3 class="comment-reply-title" id="reply-title">Добавить отзыв <small><a style="display:none;" href="/shop/?product=deck-kit-8-x-10#respond" id="cancel-comment-reply-link" rel="nofollow">Отменить ответ</a></small></h3>				<form novalidate="" class="comment-form" id="commentform" method="post" action="http://localhost/shop/wp-comments-post.php">
+													<p class="comment-form-rating"><label for="rating">Ваша оценка</label><p class="stars"><span><a href="#" class="star-1">1</a><a href="#" class="star-2">2</a><a href="#" class="star-3">3</a><a href="#" class="star-4">4</a><a href="#" class="star-5">5</a></span></p><select id="rating" name="rating" style="display: none;">
+													<option value="">Оценка…</option>
+													<option value="5">Отлично</option>
+													<option value="4">Хорошо</option>
+													<option value="3">Средне</option>
+													<option value="2">Неплохо</option>
+													<option value="1">Плохо</option>
+												</select></p><p class="comment-form-comment"><label for="comment">Ваш отзыв</label><textarea aria-required="true" rows="8" cols="45" name="comment" id="comment"></textarea></p><p class="form-submit"><input type="submit" value="Отправить" class="submit" id="submit" name="submit"> <input type="hidden" id="comment_post_ID" value="33" name="comment_post_ID">
+												<input type="hidden" value="0" id="comment_parent" name="comment_parent">
+											</p><input type="hidden" value="e87c91c976" name="_wp_unfiltered_html_comment" id="_wp_unfiltered_html_comment_disabled"><script>(function(){if(window===window.parent){document.getElementById('_wp_unfiltered_html_comment_disabled').name='_wp_unfiltered_html_comment';}})();</script>
+										</form>
+									</div><!-- #respond -->
+								</div>
+							</div>
+
+
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="related products">
+
+					<h2 class="related-title">Related products</h2>
+
+					<ul class="products">
+
+
+						<li class="first post-29 product type-product status-publish has-post-thumbnail product_cat-decking pa_material-cedar pa_material-western shipping-taxable purchasable product-type-variable product-cat-decking has-children instock">
+
+							<a href="http://localhost/shop/?product=deck-kit-8-x-14"><img width="300" height="300" sizes="(max-width: 300px) 100vw, 300px" srcset="http://localhost/shop/wp-content/uploads/2016/05/Deck-300x300.jpg 300w, http://localhost/shop/wp-content/uploads/2016/05/Deck-150x150.jpg 150w, http://localhost/shop/wp-content/uploads/2016/05/Deck-180x180.jpg 180w, http://localhost/shop/wp-content/uploads/2016/05/Deck.jpg 337w" alt="Deck" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="http://localhost/shop/wp-content/uploads/2016/05/Deck-300x300.jpg"><h3>Deck Kit 8′ x 14′</h3>
+
+								<span class="price"><span class="amount">$855.00</span></span>
+							</a><a class="button product_type_variable add_to_cart_button" data-product_sku="50100082" data-product_id="29" data-quantity="1" href="http://localhost/shop/?product=deck-kit-8-x-14" rel="nofollow">Details</a>
+						</li>
+
+
+						<li class="post-25 product type-product status-publish has-post-thumbnail product_cat-decking pa_material-cedar pa_material-western shipping-taxable purchasable product-type-variable product-cat-decking has-children instock">
+
+							<a href="http://localhost/shop/?product=deck-kit-14-x-14"><img width="300" height="300" sizes="(max-width: 300px) 100vw, 300px" srcset="http://localhost/shop/wp-content/uploads/2016/05/Deck-300x300.jpg 300w, http://localhost/shop/wp-content/uploads/2016/05/Deck-150x150.jpg 150w, http://localhost/shop/wp-content/uploads/2016/05/Deck-180x180.jpg 180w, http://localhost/shop/wp-content/uploads/2016/05/Deck.jpg 337w" alt="Deck" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="http://localhost/shop/wp-content/uploads/2016/05/Deck-300x300.jpg"><h3>Deck Kit 14′ x 14′</h3>
+
+								<span class="price"><span class="amount">$855.00</span></span>
+							</a><a class="button product_type_variable add_to_cart_button" data-product_sku="50100080" data-product_id="25" data-quantity="1" href="http://localhost/shop/?product=deck-kit-14-x-14" rel="nofollow">Details</a>
+						</li>
+
+
+						<li class="post-31 product type-product status-publish has-post-thumbnail product_cat-decking pa_material-cedar pa_material-western shipping-taxable purchasable product-type-variable product-cat-decking has-children instock">
+
+							<a href="http://localhost/shop/?product=deck-kit-8-x-20"><img width="300" height="300" sizes="(max-width: 300px) 100vw, 300px" srcset="http://localhost/shop/wp-content/uploads/2016/05/Deck-300x300.jpg 300w, http://localhost/shop/wp-content/uploads/2016/05/Deck-150x150.jpg 150w, http://localhost/shop/wp-content/uploads/2016/05/Deck-180x180.jpg 180w, http://localhost/shop/wp-content/uploads/2016/05/Deck.jpg 337w" alt="Deck" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="http://localhost/shop/wp-content/uploads/2016/05/Deck-300x300.jpg"><h3>Deck Kit 8′ x 20′</h3>
+
+								<span class="price"><span class="amount">$855.00</span></span>
+							</a><a class="button product_type_variable add_to_cart_button" data-product_sku="50100083" data-product_id="31" data-quantity="1" href="http://localhost/shop/?product=deck-kit-8-x-20" rel="nofollow">Details</a>
+						</li>
+
+
+						<li class="last post-16 product type-product status-publish has-post-thumbnail product_cat-decking pa_material-cedar pa_material-western shipping-taxable purchasable product-type-variable product-cat-decking has-children instock">
+
+							<a href="http://localhost/shop/?product=deck-kit-8-x-16"><img width="300" height="300" sizes="(max-width: 300px) 100vw, 300px" srcset="http://localhost/shop/wp-content/uploads/2016/05/Deck-300x300.jpg 300w, http://localhost/shop/wp-content/uploads/2016/05/Deck-150x150.jpg 150w, http://localhost/shop/wp-content/uploads/2016/05/Deck-180x180.jpg 180w, http://localhost/shop/wp-content/uploads/2016/05/Deck.jpg 337w" alt="Deck" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="http://localhost/shop/wp-content/uploads/2016/05/Deck-300x300.jpg"><h3>Deck Kit 8′ x 16′</h3>
+
+								<span class="price"><span class="amount">$855.00</span></span>
+							</a><a class="button product_type_variable add_to_cart_button" data-product_sku="50100085" data-product_id="16" data-quantity="1" href="http://localhost/shop/?product=deck-kit-8-x-16" rel="nofollow">Details</a>
+						</li>
+
+						<li class="last post-16 product type-product status-publish has-post-thumbnail product_cat-decking pa_material-cedar pa_material-western shipping-taxable purchasable product-type-variable product-cat-decking has-children instock">
+
+							<a href="http://localhost/shop/?product=deck-kit-8-x-16"><img width="300" height="300" sizes="(max-width: 300px) 100vw, 300px" srcset="http://localhost/shop/wp-content/uploads/2016/05/Deck-300x300.jpg 300w, http://localhost/shop/wp-content/uploads/2016/05/Deck-150x150.jpg 150w, http://localhost/shop/wp-content/uploads/2016/05/Deck-180x180.jpg 180w, http://localhost/shop/wp-content/uploads/2016/05/Deck.jpg 337w" alt="Deck" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="http://localhost/shop/wp-content/uploads/2016/05/Deck-300x300.jpg"><h3>Deck Kit 8′ x 16′</h3>
+
+								<span class="price"><span class="amount">$855.00</span></span>
+							</a><a class="button product_type_variable add_to_cart_button" href="http://localhost/shop/?product=deck-kit-8-x-16">Details</a>
+						</li>	
+					</ul>
+
+				</div>
+
+
+				<meta content="http://localhost/shop/?product=deck-kit-8-x-10" itemprop="url">
+
+			</div><!-- #product-33 -->
+
+
+
+		</div>
+	</div>
+	<!-- <?php get_sidebar( 'content' ); ?> -->
+
+
+
+
+
+
+
+
+	<!-- get_footer(); -->
+</div><!-- #content -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+	
+	<div id="supplementary">
+		<div class="slider-wrap">
+			<div id="footbar" class="footer-sidebar widget-area" role="complementary">
+
+				<aside id="sticky-posts-10" class="widget widget_ultimate_posts">
+
+
+
+
+
+
+
+
+
+					<div class="fw-page-builder-content"><section class="fw-main-row "  >
+						<div class="fw-container">
+							<div class="fw-row">
+								<div class="fw-col-xs-12">
+									<ul class="fw-ul">
+
+										<li class="fw-col-xs-12 fw-col-sm-15">
+											<a href="#" target="_self" class="fw-btn fw-btn-1 ">
+												<span></span>
+												Contact us</a>
+
+												<div class="fw-wrapper">
+													<p>1008 River Road<br />Delta, BC, Canada<br />V4C 2R3</p><p>&nbsp;</p><ul><li>Local (BC)    <strong>604 589-1900</strong></li><li>Toll Free (CAN)    <strong>887 589-1900</strong></li><li>Toll Free (USA)    <strong>887 689-1504</strong></li></ul><p>&nbsp;</p><p><a href="mailto:info@sunburycedar.com">info@sunburycedar.com</a></p><p><a href="mailto:info@sunburycedar.com">careers@sunburycedar.com</a></p>
+												</div>
+											</li>
+											<li class="fw-col-xs-12 fw-col-sm-15">
+												<a href="#" target="_self" class="fw-btn fw-btn-1 ">
+													<span></span>
+													Follow us</a>
+
+													<div class="fw-wrapper">
+														<ul class="icons"><li><a href="www.facebook.com"><i class="fa fa-facebook fa- " ></i></a></li><li><a href="www.linkedin-square.com"><i class="fa fa-linkedin-square fa- " ></i></a></li><li><a href="www.google.com"><i class="fa fa-google-plus fa- " ></i></a></li><li><a href="www.houzz.com"><i class="fa fa-houzz fa- " ></i></a></li></ul>
+													</div>
+												</li>
+												<li class="fw-col-xs-12 fw-col-sm-15">
+													<a href="#" target="_self" class="fw-btn fw-btn-1 ">
+														<span></span>
+														Help</a>
+
+														<div class="fw-wrapper">
+															<ul><li><a href="#">Sevices</a></li><li><a href="#">Contact Us</a></li><li><a href="#">FAQ</a></li><li><a href="#">Site Map</a></li></ul>
+														</div>
+													</li>
+													<li class="fw-col-xs-12 fw-col-sm-15">
+														<a href="#" target="_self" class="fw-btn fw-btn-1 ">
+															<span></span>
+															Company info</a>
+
+															<div class="fw-wrapper">
+																<ul><li><a href="#">About Sunbury</a></li><li><a href="#">Careers</a></li></ul>
+															</div>
+															<div class="fw-wrapper wrapper-in">
+																<a href="#" target="_self" class="fw-btn fw-btn-1 ">
+																	<span></span>
+																	Terms</a>
+
+
+																	<ul><li><a href="#">Return Policy</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Shipping</a></li><li><a href="#">Terms &amp; Conditions</a></li></ul>
+																</div>
+															</li>
+
+
+															<li class="fw-col-xs-12 fw-col-sm-15">
+																<a href="#" target="_self" class="fw-btn fw-btn-1 ">
+																	<span></span>
+																	Subscribe our newsletter</a>
+
+																	<div class="fw-wrapper">
+																		<p>Stay tuned for the next great deal from your go-to wood supplier.</p><div class="form-wrapper contact-form">
+																		<form data-fw-form-id="fw_form" class="fw_form_fw_form" method="post" action="http://localhost/shop/?post_type=product" data-fw-ext-forms-type="contact-forms"  ><input type="hidden" name="fwf" value="fw_form" /><input type="hidden" id="_nonce_271fca0b2bb618b7f84815c4d944dab4" name="_nonce_271fca0b2bb618b7f84815c4d944dab4" value="557988c6bd" /><input type="hidden" name="_wp_http_referer" value="/shop/?post_type=product" /><input type="hidden" name="fw_ext_forms_form_type" value="contact-forms" /><input type="hidden" name="fw_ext_forms_form_id" value="cd0c378d2ed413ab75c228c5447f499c" /><div class="wrap-forms">
+																			<div class="fw-row"></div><div class="fw-row"><div class="fw-col-xs-12 form-builder-item">
+																			<div class="field-text">
+																				<label for="id-1">			<sup>*</sup>		</label>
+																				<input type="text" name="email_6aa5a63" placeholder="Enter E-mail" value="" id="id-1" required="required" >
+																			</div>
+																		</div></div><div class="fw-row"></div></div><div>
+																		<input type="submit" value="Sign up"/>
+																	</div></form></div>
+																</div>
+																<div class="fw-wrapper wrapper-in">
+																	<a href="#" target="_self" class="fw-btn fw-btn-1 ">
+																		<span></span>
+																		Visit us</a>
+
+
+																		<p>Find directions to Sunbury via our Google Map Tool</p><p><a class="button" href="#">Get Directions</a></p>
+																	</div>
+																</li>
+															</ul>
+
+
+														</div>
+													</div>
+
+												</div>
+											</section>
+										</div>
+
+
+
+
+
+
+
+
+
+
+									</aside>
+
+								</div><!-- #footer-sidebar -->
+								<div id="footbar-2" class="footer-sidebar widget-area" role="complementary">	
+									<aside id="sticky-posts-11" class="widget widget_ultimate_posts">
+
+
+
+
+
+
+
+
+
+										<div class="fw-page-builder-content"><section class="fw-main-row "  >
+											<div class="fw-container">
+												<div class="fw-row">
+													<div class="fw-col-xs-12">
+														<ul class="fw-ul">
+
+															<li class="fw-col-xs-12 fw-col-sm-15">
+																<a href="#" target="_self" class="fw-btn fw-btn-1 ">
+																	<span></span>
+																	Subscribe our newsletter</a>
+
+																	<div class="fw-wrapper">
+																		<p>Stay tuned for the next great deal from your go-to wood supplier.</p><div class="form-wrapper contact-form">
+																		<form data-fw-form-id="fw_form" class="fw_form_fw_form" method="post" action="http://localhost/shop/?post_type=product" data-fw-ext-forms-type="contact-forms"  ><input type="hidden" name="fwf" value="fw_form" /><input type="hidden" id="_nonce_271fca0b2bb618b7f84815c4d944dab4" name="_nonce_271fca0b2bb618b7f84815c4d944dab4" value="557988c6bd" /><input type="hidden" name="_wp_http_referer" value="/shop/?post_type=product" /><input type="hidden" name="fw_ext_forms_form_type" value="contact-forms" /><input type="hidden" name="fw_ext_forms_form_id" value="cd0c378d2ed413ab75c228c5447f499c" /><div class="wrap-forms">
+																			<div class="fw-row"></div><div class="fw-row"><div class="fw-col-xs-12 form-builder-item">
+																			<div class="field-text">
+																				<label for="id-2">			<sup>*</sup>		</label>
+																				<input type="text" name="email_6aa5a63" placeholder="Enter E-mail" value="" id="id-2" required="required" >
+																			</div>
+																		</div></div><div class="fw-row"></div></div><div>
+																		<input type="submit" value="Sign up"/>
+																	</div></form></div>
+																</div>
+																<a href="#" target="_self" class="fw-btn fw-btn-1 ">
+																	<span></span>
+																	Visit us</a>
+
+																	<div class="fw-wrapper">
+																		<p>Find directions to Sunbury via our Google Map Tool</p><p><a class="button" href="#">Get Directions</a></p>
+																	</div>
+																</li>
+																<li class="fw-col-xs-12 fw-col-sm-15">
+																	<a href="#" target="_self" class="fw-btn fw-btn-1 ">
+																		<span></span>
+																		Follow us</a>
+
+																		<div class="fw-wrapper">
+																			<ul class="icons"><li><a href="www.facebook.com"><i class="fa fa-facebook fa- " ></i></a></li><li><a href="www.linkedin-square.com"><i class="fa fa-linkedin-square fa- " ></i></a></li><li><a href="www.google.com"><i class="fa fa-google-plus fa- " ></i></a></li><li><a href="www.houzz.com"><i class="fa fa-houzz fa- " ></i></a></li></ul>
+																		</div>
+																	</li>
+																	<li class="fw-col-xs-12 fw-col-sm-15">
+																		<a href="#" target="_self" class="fw-btn fw-btn-1 ">
+																			<span></span>
+																			Help</a>
+
+																			<div class="fw-wrapper">
+																				<ul><li><a href="#">Sevices</a></li><li><a href="#">Contact Us</a></li><li><a href="#">FAQ</a></li><li><a href="#">Site Map</a></li></ul>
+																			</div>
+																		</li>
+																		<li class="fw-col-xs-12 fw-col-sm-15">
+																			<a href="#" target="_self" class="fw-btn fw-btn-1 ">
+																				<span></span>
+																				Company info</a>
+
+																				<div class="fw-wrapper">
+																					<ul><li><a href="#">About Sunbury</a></li><li><a href="#">Careers</a></li></ul>
+																				</div>
+																				<a href="#" target="_self" class="fw-btn fw-btn-1 ">
+																					<span></span>
+																					Terms</a>
+
+																					<div class="fw-wrapper">
+																						<ul><li><a href="#">Return Policy</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Shipping</a></li><li><a href="#">Terms &amp; Conditions</a></li></ul>
+																					</div>
+																				</li>
+																				<li class="fw-col-xs-12 fw-col-sm-15">
+
+
+																					<div class="fw-wrapper">
+																						<a href="#" target="_self" class="fw-btn fw-btn-1 ">
+																							<span></span>
+																							Contact us</a><p>1008 River Road<br />Delta, BC, Canada<br />V4C 2R3</p><p>&nbsp;</p><ul><li>Local (BC)    <strong>604 589-1900</strong></li><li>Toll Free (CAN)    <strong>887 589-1900</strong></li><li>Toll Free (USA)    <strong>887 689-1504</strong></li></ul><p>&nbsp;</p><p><a href="mailto:info@sunburycedar.com">info@sunburycedar.com</a></p><p><a href="mailto:info@sunburycedar.com">careers@sunburycedar.com</a></p>
+																						</div>
+																					</li>
+																				</ul>
+
+
+																			</div>
+																		</div>
+
+																	</div>
+																</section>
+															</div>
+
+
+
+
+
+
+
+
+
+
+														</aside>
+													</div><!-- #footbar-2 -->
+												</div><!-- .slider-wrap -->
+											</div><!-- #supplementary -->
+
+
+										<div class="bottom-line clearfix">
+		<div class="line-wrap">
+				<div class="site-info">
+		<a class="site-branding logo" rel="home" href="http://localhost/shop/">
+	
+			<img width="42" height="20" alt="Sunbury Cedar" src="http://localhost/shop/wp-content/uploads/2016/05/log.png">
+									<h3 class="site-title">Sunbury Cedar</h3>
+					</a><!-- .site-branding -->
+
+			<p class="copyright"> Copyright 2015 © Sunbury Cedar All Rights Reserved.</p>
+
+		</div><!-- .site-info -->
+		<div class="line-item">
+			<a href="#">Ask a question</a>
+		</div>
+		</div><!-- .line-wrap -->
+
+		</div>
+											</footer><!-- #colophon -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										</div><!-- #page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										<!--bower:js-->
+										<script src="libs/jquery/dist/1-jquery.js"></script>
+										<script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+										<script src="libs/equalHeights/dist/js/equalheights.js"></script>
+										<script src="libs/slicknav/dist/jquery.slicknav.js"></script>
+										<script src="libs/flexnav/dist/js/jquery.flexnav.min.js"></script>
+										<script src="libs/owl.carousel/dist/owl.carousel.js"></script>
+										<script src="libs/multiple-accordion/dist/js/scriptbreaker-multiple-accordion-1.js"></script>
+										<!--endbower-->
+										<script src="js/common.js"></script>
+										<script src="libs/navgoco/dist/js/jquery.navgoco.min.js"></script>
+
+
+
+
+
+									</body>
+
+
+									</html>
+
+
+
+<!-- footer-line
+<aside id="rss-2" class="widget widget_rss">
+	<h1 class="widget-title">
+	<a class="rsswidget" href="http://localhost/shop/?p=98">
+		<img class="rss-widget-icon" style="border:0" width="14" height="14" src="http://localhost/shop/wp-includes/images/rss.png" alt="RSS" />
+	</a>
+	 <a class="rsswidget" href="http://localhost/shop">footer-line</a>
+ 	</h1>
+ 	<ul>
+	 <li>
+ 	<a class='rsswidget' href='http://localhost/shop/?p=98'>footer-line</a>
+ 	<div class="rssSummary"></div>
+ 	</li>
+ 	<li>
+	 <a class='rsswidget' href='http://localhost/shop/?p=95'>Visit Us</a>
+ 	<div class="rssSummary">Find directions to Sunbury via our Google Map Tool</div>
+ 	</li>
+ 	<li>
+ 	<a class='rsswidget' href='http://localhost/shop/?p=93'>Subscribe our newsletter</a>
+ 	<div class="rssSummary"></div>
+ 	</li>
+ 	<li>
+ 	<a class='rsswidget' href='http://localhost/shop/?p=90'>Terms</a>
+	 <div class="rssSummary">Return Policy Privacy Policy Shipping Terms &amp; Conditions</div>
+ 	</li>
+ 	<li>
+ 	<a class='rsswidget' href='http://localhost/shop/?p=85'>Company info</a>
+ 	<div class="rssSummary">About Sunbury Careers</div>
+ 	</li>
+ 	<li>
+ 	<a class='rsswidget' href='http://localhost/shop/?p=83'>Help</a>
+ 	<div class="rssSummary">Sevices Contact Us FAQ Site Map</div>
+	 </li>
+ 	<li>
+ 	<a class='rsswidget' href='http://localhost/shop/?p=81'>Follow Us</a><div class="rssSummary">
+ 	
+ 	</div>
+	 </li>
+ 	<li>
+ 	<a class='rsswidget' href='http://localhost/shop/?p=79'>Contact US</a>
+ 	<div class="rssSummary">1008 River Road Delta, BC, Canada V4C 2R3 Local (BC) 604 589-1900 Toll Free (CAN) 887 589-1900 Toll Free (USA) 887 689-1504 http://info@sunburycedar.com http://careers@sunburycedar.com</div>
+ 	</li>
+ 	<li>
+ 	<a class='rsswidget' href='http://localhost/shop/?p=75'>Need a Quote?</a>
+ 	<div class="rssSummary">No one likes surprises, especially when it comes to the cost of your next project. Let us help you get the quote you need to help you plan better</div>
+ 	</li>
+ 	<li>
+	 <a class='rsswidget' href='http://localhost/shop/?p=73'>Custom Installation</a>
+ 	<div class="rssSummary">Looking for a professional? Sunbury offers experienced professionals who are keen to bring your next project to fruition. With over 35 years of experience, our trusted installers are able to service both commercials and residential clients from Lions Bay to Hope. Get the results you want.</div>
+	</li>
+ </ul>
+ </aside> -->

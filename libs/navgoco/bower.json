@@ -1,0 +1,17 @@
+{
+  "name": "navgoco",
+  "version": "1.0.0",
+  "main": [
+    "dist/css/jquery.navgoco.css",
+    "dist/js/jquery.cookie.min.js",
+    "dist/js/jquery.navgoco.min.js"
+  ],
+  "ignore": [],
+  "dependencies": {
+    "jquery": ">= 1.8.3"
+  },
+  "devDependencies": {
+    "foundation": "~5.5.2",
+    "qunit": "1.14.0"
+  }
+}

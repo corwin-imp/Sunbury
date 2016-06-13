@@ -1,0 +1,258 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1280px) {
+  .site-header .header-main .logo {
+    float: none;
+    padding: 0;
+    top: auto;
+    text-align: center;
+    padding-top: 10px;
+    display: block; }
+    .site-header .header-main .logo h3 {
+      line-height: 20px; }
+    .site-header .header-main .logo img {
+      display: block;
+      margin: 0 auto; }
+  .site-header .header-main .main-navigation {
+    float: none;
+    clear: both;
+    background: #3e75e8; }
+  .site-header .header-main .flexnav li {
+    float: none; }
+  .site-footer #supplementary .footer-sidebar .fw-container .fw-col-xs-12 {
+    width: 100%;
+    float: none;
+    clear: both; }
+    .site-footer #supplementary .footer-sidebar .fw-container .fw-col-xs-12 .fw-wrapper {
+      display: none; }
+      .site-footer #supplementary .footer-sidebar .fw-container .fw-col-xs-12 .fw-wrapper ul {
+        display: block !important;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease; }
+  .site-footer section .fw-btn-1 {
+    cursor: pointer;
+    pointer-events: auto; }
+  .site-footer #supplementary .slider-wrap .owl-nav {
+    top: auto;
+    bottom: 15%; }
+    .site-footer #supplementary .slider-wrap .owl-nav .owl-prev {
+      left: 25px; }
+    .site-footer #supplementary .slider-wrap .owl-nav div.owl-next {
+      right: 25px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  body::before {
+    display: none; }
+  #secondary {
+    width: 34%;
+    padding: 0; }
+  #primary {
+    width: 66%;
+    padding: 0 0 0 15px; }
+  #content {
+    padding: 0 10px;
+    margin: 30px 0; }
+  .woocommerce #content #primary .product .images {
+    float: none;
+    width: auto;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 10px; }
+  .woocommerce #content #primary .product .woocommerce-breadcrumb {
+    float: none;
+    width: auto;
+    margin-bottom: 20px;
+    padding: 0; }
+  .woocommerce #content #primary .product .wc-tabs-wrapper .wc-tabs {
+    overflow: visible; }
+    .woocommerce #content #primary .product .wc-tabs-wrapper .wc-tabs li {
+      display: inline-block; }
+      .woocommerce #content #primary .product .wc-tabs-wrapper .wc-tabs li.active::before {
+        left: 25px;
+        margin: 0 auto;
+        right: 0;
+        top: -10px;
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg); }
+  .woocommerce #content #primary .product .product-title-wrap {
+    text-align: center;
+    margin-bottom: 15px; }
+    .woocommerce #content #primary .product .product-title-wrap .price {
+      font-size: 22px; }
+  .woocommerce #content #primary .product .summary {
+    float: none;
+    width: auto;
+    padding: 0;
+    margin-bottom: 0; }
+  .woocommerce #content #primary .product .wc-tabs-wrapper {
+    margin-top: 30px; }
+    .woocommerce #content #primary .product .wc-tabs-wrapper .wc-tab {
+      margin: 0; }
+  #primary .related .related-title {
+    margin-bottom: 5px; }
+  #primary .related .products {
+    margin: 0 -5px; }
+    #primary .related .products .product {
+      padding: 0 5px; }
+      #primary .related .products .product img {
+        margin: 0 0 3px; }
+      #primary .related .products .product h3 {
+        font-size: 11px; }
+      #primary .related .products .product .price {
+        font-size: 10px; }
+    #primary .related .products .add_to_cart_button {
+      margin-top: 0;
+      padding: 3px 0; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 800px) {
+  #secondary {
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+    float: none;
+    text-align: center;
+    padding: 0; }
+    #secondary .posts {
+      display: none; }
+  #primary {
+    width: 100%;
+    padding: 0; }
+  #content {
+    padding: 0 10px;
+    margin: 30px 0; }
+    #content .woocommerce-breadcrumb {
+      display: none; }
+    #content .related ul.products {
+      position: relative;
+      margin: 0 -15px; }
+      #content .related ul.products .product {
+        width: 50%;
+        float: left;
+        padding: 10px 0;
+        position: relative; }
+      #content .related ul.products a {
+        width: 60%;
+        display: block;
+        margin: 0 auto; }
+        #content .related ul.products a img {
+          display: block;
+          margin: 0 auto; }
+      #content .related ul.products h3 {
+        font-size: 10px; }
+  .site-footer .bottom-line {
+    padding: 10px 0; }
+    .site-footer .bottom-line .line-wrap {
+      text-align: center; }
+      .site-footer .bottom-line .line-wrap .line-item {
+        position: relative;
+        width: auto;
+        bottom: -5px; }
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 600px) {
+  .site-header .header-main .toggle_mnu {
+    display: block; }
+  .site-header .header-main #primary-menu {
+    max-height: 0;
+    display: block; }
+    .site-header .header-main #primary-menu .sub-menu {
+      position: relative;
+      left: auto;
+      float: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      top: 0; }
+      .site-header .header-main #primary-menu .sub-menu a {
+        width: auto; }
+    .site-header .header-main #primary-menu > li {
+      display: block;
+      border-bottom: 1px solid #1a58d9;
+      padding: 5px 0; }
+      .site-header .header-main #primary-menu > li .touch-button {
+        left: auto;
+        top: 15px;
+        width: 50px; }
+        .site-header .header-main #primary-menu > li .touch-button i {
+          font-size: 11px; }
+    .site-header .header-main #primary-menu.flexnav-show {
+      max-height: 2000px;
+      opacity: 1;
+      -webkit-transition: all 0.5s ease-in-out 0s;
+      transition: all 0.5s ease-in-out 0s; }
+  .woocommerce #content #main .product .summary .variations tr td select {
+    width: 180px; }
+  .woocommerce #content #main .product .wc-tabs-wrapper .wc-tabs li {
+    display: block; }
+    .woocommerce #content #main .product .wc-tabs-wrapper .wc-tabs li.active::before {
+      left: auto;
+      margin: 0;
+      right: auto;
+      top: auto;
+      -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
+  .woocommerce #content #main .product .images img {
+    display: block;
+    height: 70%;
+    width: 70%;
+    margin: 0 auto; }
+  .woocommerce #content #main .product .related ul.products .next-button {
+    display: block; }
+  .woocommerce #content #main .product .related ul.products .product {
+    float: none;
+    margin: 0 auto;
+    width: auto; }
+    .woocommerce #content #main .product .related ul.products .product a {
+      width: 55%; }
+    .woocommerce #content #main .product .related ul.products .product:nth-child(3) ~ li {
+      display: none; }
+  .site-footer .bottom-line .line-wrap .site-info {
+    text-align: center; }
+    .site-footer .bottom-line .line-wrap .site-info > * {
+      display: block;
+      padding: 0; }
+    .site-footer .bottom-line .line-wrap .site-info .copyright {
+      border: none;
+      width: auto;
+      font-size: 11px; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1280px) {
+  .footer-sidebar ul {
+    display: block !important; } }

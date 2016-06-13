@@ -1,0 +1,22 @@
+{
+  "name": "multiple-accordion",
+  "version": "0.1.0",
+  "homepage": "http://www.htmldrive.net/items/show/1020/multi-level-slide-accordion-menu-with-jQuery",
+  "description": "A jQuery plugin for responsive menus",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "menus",
+    "responsive navigation",
+    "multiple-accordion"
+  ],
+  "main": "dist/js/scriptbreaker-multiple-accordion-1.js",
+  "license": "Unlicense",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

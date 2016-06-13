@@ -1,0 +1,296 @@
+@import "bourbon/bourbon"
+@import "vars.sass"
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1280px)
+	.site-header
+		.header-main 
+			.logo
+				float: none
+				padding: 0
+				top: auto
+				text-align: center
+				padding-top: 10px
+				display: block
+				h3
+					line-height: 20px
+				img
+					display: block
+					margin: 0 auto
+			.main-navigation
+				float: none
+				clear: both
+				background: $main-color
+			.flexnav
+				li
+					float: none
+	.site-footer #supplementary .footer-sidebar .fw-container .fw-col-xs-12
+		width: 100%
+		float: none
+		clear: both
+		.fw-wrapper
+			display: none
+			ul
+				display: block !important
+				transition: all .5s ease
+	.site-footer
+		section .fw-btn-1
+			cursor: pointer
+			pointer-events: auto
+		#supplementary .slider-wrap .owl-nav
+			top: auto
+			bottom: 15%
+			.owl-prev
+				left: 25px
+			div.owl-next
+				right: 25px
+	
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	body::before
+		display: none
+	#secondary
+		width: 34%
+		padding: 0
+	#primary
+		width: 66%
+		padding: 0 0 0 15px
+	#content
+		padding: 0 10px
+		margin: 30px 0
+
+	.woocommerce #content #primary .product
+		.images
+			float: none
+			width: auto
+			padding: 0
+			text-align: center
+			margin-bottom: 10px
+		.woocommerce-breadcrumb
+			float: none
+			width: auto
+			margin-bottom: 20px
+			padding: 0
+		.wc-tabs-wrapper .wc-tabs
+			overflow: visible
+			li
+				display: inline-block
+				&.active::before
+					left: 25px
+					margin: 0 auto
+					right: 0
+					top: -10px
+					transform: rotate(0deg)
+		.product-title-wrap
+			text-align: center
+			margin-bottom: 15px
+			.price
+				font-size: 22px
+		.summary
+			float: none
+			width: auto
+			padding: 0
+			margin-bottom: 0
+		.wc-tabs-wrapper
+			margin-top: 30px
+			.wc-tab
+				margin: 0
+	#primary .related
+		.related-title
+			margin-bottom: 5px
+		.products
+			margin: 0 -5px
+			.product
+				padding: 0 5px
+
+				img
+					margin: 0 0 3px
+				h3
+					font-size: 11px
+				.price
+					font-size: 10px
+			.add_to_cart_button
+				margin-top: 0
+				padding: 3px 0
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 800px)
+
+
+				
+	#secondary
+		width: 80%
+		margin: 0 auto
+		display: none
+		float: none
+		text-align: center
+		padding: 0
+		.posts
+			display: none
+
+	#primary
+		width: 100%
+		padding: 0
+	#content
+		padding: 0 10px
+		margin: 30px 0
+		.woocommerce-breadcrumb
+			display: none
+		.related ul.products
+			position: relative
+			margin: 0 -15px
+			.product 
+				width: 50%
+				float: left		
+				padding: 10px 0
+				position: relative
+
+			a
+				width: 60%
+				display: block
+				margin: 0 auto
+				img
+					
+					display: block
+					margin: 0 auto
+			h3
+				font-size: 10px
+	.site-footer .bottom-line
+		padding: 10px 0
+		.line-wrap
+			text-align: center
+
+			.line-item
+				position: relative
+				width: auto
+				bottom: -5px
+
+
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 600px)
+
+	.site-header .header-main 
+		.toggle_mnu
+			display: block
+		#primary-menu
+			max-height: 0
+			display: block
+			.sub-menu
+				position: relative
+				left: auto
+				float: none
+				box-shadow: none
+				top: 0
+				a
+					width: auto
+			& > li
+				display: block
+				border-bottom: 1px solid darken($main-color, 10%)
+				padding: 5px 0
+				.touch-button
+					left: auto
+					top: 15px
+					
+					width: 50px
+					i
+						font-size: 11px
+			&.flexnav-show
+				max-height: 2000px
+				opacity: 1
+				transition: all 0.5s ease-in-out 0s
+
+	.woocommerce #content #main .product
+		.summary .variations tr td select
+			width: 180px
+		.wc-tabs-wrapper .wc-tabs li
+			display: block
+			&.active::before
+				left: auto
+				margin: 0
+				right: auto
+				top: auto
+				transform: rotate(-90deg)
+		.images
+			img
+				display: block
+				height: 70%
+				width: 70%
+				margin: 0 auto
+		.related ul.products
+			.next-button
+						display: block
+			.product
+				float: none
+				margin: 0 auto
+				width: auto
+				
+				a
+					width: 55%
+				&:nth-child(3) ~ li
+					display: none
+	.site-footer .bottom-line .line-wrap .site-info
+		text-align: center
+		&  > *
+			display: block
+			padding: 0
+			
+		.copyright
+			border: none
+			width: auto
+			font-size: 11px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1280px)
+	.footer-sidebar
+		ul
+			display: block !important
+
